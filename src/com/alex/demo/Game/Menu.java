@@ -48,7 +48,7 @@ public class Menu {
 
     private void startGamer() {
         System.out.println(
-                "What car has a V12 engine? \n" +
+                "What car has a V12 engine?\uD83C\uDFCE\n" +
                 "1. Ferrari 812 Superfast \n" +
                 "2. Volvo V60 \n" +
                 "3. Lamborghini Huracan"
@@ -58,17 +58,17 @@ public class Menu {
         switch (sc) {
             case 1:
                 player.setMoney(player.getMoney() + 50);
-                System.out.println("You were right :) + 50$!" + " Current money: " + player.getMoney() + "$ \n");
+                System.out.println("You were right :) + 50$!" + " Current money: " + player.getMoney() + "$ ✅ \n");
                 QuestionTwo();
                 break;
             case 2:
                 player.setLives(player.getLives() -1);
-                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + "\n");
+                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + " ❌" + "\n");
                 QuestionTwo();
                 break;
             case 3:
                 player.setLives(player.getLives() -1);
-                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + "\n");
+                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + " ❌" + "\n");
                 QuestionTwo();
                 break;
         }
@@ -78,7 +78,7 @@ public class Menu {
     private void QuestionTwo() {
 
         System.out.println(
-                "What car has the most horsepower? \n" +
+                "What car has the most horsepower?🎠\n" +
                 "1. Nissan GT-R \n" +
                 "2. Tesla Model S Plaid \n" +
                 "3. Ferrari F8 \n"
@@ -90,18 +90,18 @@ public class Menu {
             case 1:
                 player.setLives(player.getLives() -1);
                 player.checkLives();
-                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + "\n");
+                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + " ❌" + "\n");
                 QuestionThree();
                 break;
             case 2:
                 player.setMoney(player.getMoney() + 50);
-                System.out.println("You were right :) + 50$!" + " Current money: " + player.getMoney() + "$ \n");
+                System.out.println("You were right :) + 50$!" + " Current money: " + player.getMoney() + "$ ✅ \n");
                 QuestionThree();
                 break;
             case 3:
                 player.setLives(player.getLives() -1);
                 player.checkLives();
-                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + "\n");
+                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + " ❌" + "\n");
                 QuestionThree();
                 break;
         }
@@ -110,7 +110,7 @@ public class Menu {
         System.out.println("This is the expert level questions! If answered right is worth more :) \n");
 
         System.out.println(
-                "What car has more torque? \n" +
+                "What car has more torque?🚅 \n" +
                 "1. Kia Stinger GT 2023 \n" +
                 "2. Audi RS3 2023 \n" +
                 "3. BMW 535D 2017 \n"
@@ -121,18 +121,18 @@ public class Menu {
             case 1:
                 player.setLives(player.getLives() -1);
                 player.checkLives();
-                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + "\n");
+                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + " ❌" + "\n");
                 QuestionFour();
                 break;
             case 2:
                 player.setLives(player.getLives() -1);
                 player.checkLives();
-                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + "\n");
+                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + " ❌" + "\n");
                 QuestionFour();
                 break;
             case 3:
                 player.setMoney(player.getMoney() + 80);
-                System.out.println("You were right :) + 80$!" + " Current money: " + player.getMoney() + "$ \n");
+                System.out.println("You were right :) + 80$!" + " Current money: " + player.getMoney() + "$ ✅ \n");
                 System.out.println("BMW has 630nm of torque compared to 510nm and 480nm in the Kia and Audi \n");
                 QuestionFour();
                 break;
@@ -141,7 +141,7 @@ public class Menu {
     private void QuestionFour() {
 
         System.out.println(
-                "What car comes with a AWD system as standard? \n" +
+                "What car comes with a AWD system as standard?🦎\n" +
                 "1. BMW M2 \n" +
                 "2. Subaru WRX \n" +
                 "3. Audi A6 \n"
@@ -153,16 +153,16 @@ public class Menu {
             case 1:
                 player.setLives(player.getLives() -1);
                 player.checkLives();
-                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + "\n");
+                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + " ❌" + "\n");
                 break;
             case 2:
                 player.setMoney(player.getMoney() + 80);
-                System.out.println("You were right :) + 80$!" + " Current money: " + player.getMoney() + "$ \n");
+                System.out.println("You were right :) + 80$!" + " Current money: " + player.getMoney() + "$ ✅ \n");
                 break;
             case 3:
                 player.setLives(player.getLives() -1);
                 player.checkLives();
-                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + "\n");
+                System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + " ❌" + "\n");
                 break;
         }
     }

@@ -42,13 +42,13 @@ public class Player {
         this.money = money;
     }
 
-    public void checkLives() {
+    void checkLives() {
         if (getLives() <= 0) {
             System.out.println("You are out of lives :( Game Over!");
             System.exit(0);
         }
             else if (getLives() == 1) {
-                System.out.println("Careful only one 1 remaining! \n");
+                System.out.println("Careful only 1 life remaining! \n");
             }
         }
     }
