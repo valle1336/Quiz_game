@@ -10,13 +10,16 @@ public class Shop {
 
     Item item = new Item();
 
+    static Menu menu = new Menu();
+
     Scanner scan = new Scanner(System.in);
 
     void shopShop() {
 
         System.out.println("Welcome to the shop what do you want? 🏪\n" +
                 "1. Potion🧙🧃 200$ \n" +
-                "2. Skips➡ 350$"
+                "2. Skips➡ 350$ \n" +
+                "3. Exit shop⬅"
         );
 
 
@@ -41,6 +44,9 @@ public class Shop {
                 System.out.println("You can't afford this item! ❌ \n");
                 shopShop();
             }
+        }
+        if (sc == 3) {
+            menu.startGame();
         }
 
     }
