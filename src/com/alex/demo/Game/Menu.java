@@ -12,9 +12,12 @@ public class Menu {
     public void startGame() {
 
 
-        System.out.println("1. Start game!");
-        System.out.println("2. Go to shop!");
-        System.out.println("3. Settings!");
+        System.out.println(
+                "1. Start game! \n" +
+                "2. Go to shop! \n" +
+                "3. Settings!"
+        );
+
 
         int sc = scan.nextInt();
 
@@ -74,10 +77,13 @@ public class Menu {
 
     private void QuestionTwo() {
 
-        System.out.println("What car has the most horsepower? \n");
-        System.out.println("1. Nissan GT-R");
-        System.out.println("2. Tesla Model S Plaid");
-        System.out.println("3. Ferrari F8");
+        System.out.println(
+                "What car has the most horsepower? \n" +
+                "1. Nissan GT-R \n" +
+                "2. Tesla Model S Plaid \n" +
+                "3. Ferrari F8 \n"
+        );
+
         int sc = scan.nextInt();
 
         switch (sc) {
@@ -101,12 +107,14 @@ public class Menu {
         }
     }
     private void QuestionThree() {
-        System.out.println("This is the expert level questions! If answered right is worth more :) \n ");
+        System.out.println("This is the expert level questions! If answered right is worth more :) \n");
 
-        System.out.println("What car has more torque?");
-        System.out.println("1. Kia Stinger GT 2023");
-        System.out.println("2. Audi RS3 2023");
-        System.out.println("3. BMW 535D 2017");
+        System.out.println(
+                "What car has more torque? \n" +
+                "1. Kia Stinger GT 2023 \n" +
+                "2. Audi RS3 2023 \n" +
+                "3. BMW 535D 2017 \n"
+        );
         int sc = scan.nextInt();
 
         switch (sc) {
@@ -132,10 +140,13 @@ public class Menu {
     }
     private void QuestionFour() {
 
-        System.out.println("What car comes with a AWD system as standard?");
-        System.out.println("1. BMW M2");
-        System.out.println("2. Subaru WRX");
-        System.out.println("3. Audi A6");
+        System.out.println(
+                "What car comes with a AWD system as standard? \n" +
+                "1. BMW M2 \n" +
+                "2. Subaru WRX \n" +
+                "3. Audi A6 \n"
+        );
+
         int sc = scan.nextInt();
 
         switch (sc) {
