@@ -1,3 +1,5 @@
+package com.alex.demo.Game;
+
 public class Player {
 
     private String name;

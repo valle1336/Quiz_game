@@ -1,4 +1,5 @@
-import java.sql.SQLOutput;
+package com.alex.demo.Game;
+
 import java.util.Scanner;
 
 public class Menu {
