@@ -3,7 +3,7 @@ package com.alex.demo.Game;
 import java.util.Scanner;
 
 public class Menu {
-
+    Shop shop = new Shop();
     Player player = new Player();
 
     Intro intro = new Intro();
@@ -26,7 +26,7 @@ public class Menu {
                 startGamer();
                 break;
             case 2:
-                Shop();
+                goToShop();
                 break;
             case 3:
                 Settings();
@@ -41,9 +41,9 @@ public class Menu {
         startGame();
     }
 
-    private void Shop() {
+    private void goToShop() {
         System.out.println("There is no shop at this time!");
-        startGame();
+        shop.shopShop();
     }
 
     private void startGamer() {
