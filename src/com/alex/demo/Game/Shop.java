@@ -57,6 +57,5 @@ public class Shop {
         if (sc == 3) {
             menu.startGame();
         }
-
     }
 }

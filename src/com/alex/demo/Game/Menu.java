@@ -76,13 +76,11 @@ public class Menu {
                 QuestionTwo();
                 break;
             case 4:
-                item.setPotion(item.getPotion() - 1);
-                player.setLives(player.getLives() + 1);
-                System.out.println("You healed up one life!");
+                item.checkIfPotionIsOwned();
+                startGamer();
             case 5:
-                item.setSkips(item.getSkips() - 1);
-                player.setMoney(player.getMoney() + 50);
-                System.out.println("You skipped this round and earned 50$ ");
+                item.checkIfSkipIsOwned();
+                QuestionTwo();
         }
     }
 
@@ -119,13 +117,11 @@ public class Menu {
                 QuestionThree();
                 break;
             case 4:
-                item.setPotion(item.getPotion() - 1);
-                player.setLives(player.getLives() + 1);
-                System.out.println("You healed up one life!");
+                item.checkIfPotionIsOwned();
+                QuestionTwo();
             case 5:
-                item.setSkips(item.getSkips() - 1);
-                player.setMoney(player.getMoney() + 50);
-                System.out.println("You skipped this round and earned 50$ ");
+                item.checkIfSkipIsOwned();
+                QuestionThree();
         }
     }
     private void QuestionThree() {
@@ -161,13 +157,11 @@ public class Menu {
                 QuestionFour();
                 break;
             case 4:
-                item.setPotion(item.getPotion() - 1);
-                player.setLives(player.getLives() + 1);
-                System.out.println("You healed up one life!");
+                item.checkIfPotionIsOwned();
+                QuestionThree();
             case 5:
-                item.setSkips(item.getSkips() - 1);
-                player.setMoney(player.getMoney() + 50);
-                System.out.println("You skipped this round and earned 50$ ");
+                item.checkIfSkipIsOwned();
+                QuestionFour();
         }
     }
     private void QuestionFour() {
@@ -202,13 +196,11 @@ public class Menu {
                 startGame();
                 break;
             case 4:
-                item.setPotion(item.getPotion() - 1);
-                player.setLives(player.getLives() + 1);
-                System.out.println("You healed up one life!");
+                item.checkIfPotionIsOwned();
+                QuestionFour();
             case 5:
-                item.setSkips(item.getSkips() - 1);
-                player.setMoney(player.getMoney() + 50);
-                System.out.println("You skipped this round and earned 50$ ");
+                item.checkIfSkipIsOwned();
+                startGamer();
         }
     }
 }
