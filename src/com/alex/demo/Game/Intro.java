@@ -18,21 +18,23 @@ public class Intro {
 
         player.setName(name);
 
-        Continue();
+        continueGame();
     }
 
-    public void Continue() {
+    public void continueGame() {
         System.out.println("Hello " + player.getName() + " do you wish to continue? :) Y/N");
 
-        String yesOrNo = scan.nextLine();
+        String yesOrNo = scan.nextLine().toLowerCase();
 
-        if (yesOrNo.equals("Y")) {
-            menu.startGame();
-        }
-        else if (yesOrNo.equals("N")){
-            System.out.println("Okay exiting app! :(");
-            System.exit(0);
-        }
+
+            if (yesOrNo.equals("y")) {
+                menu.startGame();
+            } else if (yesOrNo.equals("n")) {
+                System.out.println("Okay exiting app! :(");
+                System.exit(0);
+            } else {
+                System.out.println("Invalid input!");
+                continueGame();
+            }
     }
-
 }
