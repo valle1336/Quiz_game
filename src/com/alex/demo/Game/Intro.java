@@ -24,7 +24,7 @@ public class Intro {
     public void continueGame() {
         System.out.println("Hello " + player.getName() + " do you wish to continue? :) Y/N");
 
-        String yesOrNo = scan.nextLine().toLowerCase();
+        String yesOrNo = scan.nextLine().toLowerCase(); //Makes the program accept lower and higher case letters
 
 
             if (yesOrNo.equals("y")) {

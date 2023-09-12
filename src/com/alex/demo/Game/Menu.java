@@ -1,8 +1,11 @@
 package com.alex.demo.Game;
 
+import com.alex.demo.Items.Item;
+
 import java.util.Scanner;
 
 public class Menu {
+    Item item = new Item();
     Shop shop = new Shop();
     Player player = new Player();
 
@@ -50,7 +53,9 @@ public class Menu {
                 "What car has a V12 engine?\uD83C\uDFCE\n" +
                 "1. Ferrari 812 Superfast \n" +
                 "2. Volvo V60 \n" +
-                "3. Lamborghini Huracan"
+                "3. Lamborghini Huracan \n" +
+                        "4. Use Potion! \n" +
+                        "5. Use Skip! \n"
         );
         int sc = scan.nextInt();
 
@@ -70,6 +75,14 @@ public class Menu {
                 System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + " ❌" + "\n");
                 QuestionTwo();
                 break;
+            case 4:
+                item.setPotion(item.getPotion() - 1);
+                player.setLives(player.getLives() + 1);
+                System.out.println("You healed up one life!");
+            case 5:
+                item.setSkips(item.getSkips() - 1);
+                player.setMoney(player.getMoney() + 50);
+                System.out.println("You skipped this round and earned 50$ ");
         }
     }
 
@@ -80,7 +93,9 @@ public class Menu {
                 "What car has the most horsepower?🎠\n" +
                 "1. Nissan GT-R \n" +
                 "2. Tesla Model S Plaid \n" +
-                "3. Ferrari F8 \n"
+                "3. Ferrari F8 \n" +
+                        "4. Use Potion! \n" +
+                        "5. Use Skip! \n"
         );
 
         int sc = scan.nextInt();
@@ -103,6 +118,14 @@ public class Menu {
                 System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + " ❌" + "\n");
                 QuestionThree();
                 break;
+            case 4:
+                item.setPotion(item.getPotion() - 1);
+                player.setLives(player.getLives() + 1);
+                System.out.println("You healed up one life!");
+            case 5:
+                item.setSkips(item.getSkips() - 1);
+                player.setMoney(player.getMoney() + 50);
+                System.out.println("You skipped this round and earned 50$ ");
         }
     }
     private void QuestionThree() {
@@ -112,7 +135,9 @@ public class Menu {
                 "What car has more torque?🚅 \n" +
                 "1. Kia Stinger GT 2023 \n" +
                 "2. Audi RS3 2023 \n" +
-                "3. BMW 535D 2017 \n"
+                "3. BMW 535D 2017 \n" +
+                        "4. Use Potion! \n" +
+                        "5. Use Skip! \n"
         );
         int sc = scan.nextInt();
 
@@ -135,6 +160,14 @@ public class Menu {
                 System.out.println("BMW has 630nm of torque compared to 510nm and 480nm in the Kia and Audi \n");
                 QuestionFour();
                 break;
+            case 4:
+                item.setPotion(item.getPotion() - 1);
+                player.setLives(player.getLives() + 1);
+                System.out.println("You healed up one life!");
+            case 5:
+                item.setSkips(item.getSkips() - 1);
+                player.setMoney(player.getMoney() + 50);
+                System.out.println("You skipped this round and earned 50$ ");
         }
     }
     private void QuestionFour() {
@@ -143,7 +176,9 @@ public class Menu {
                 "What car comes with a AWD system as standard?🦎\n" +
                 "1. BMW M2 \n" +
                 "2. Subaru WRX \n" +
-                "3. Audi A6 \n"
+                "3. Audi A6 \n" +
+                        "4. Use Potion! \n" +
+                        "5. Use Skip! \n"
         );
 
         int sc = scan.nextInt();
@@ -166,6 +201,14 @@ public class Menu {
                 System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + " ❌" + "\n");
                 startGame();
                 break;
+            case 4:
+                item.setPotion(item.getPotion() - 1);
+                player.setLives(player.getLives() + 1);
+                System.out.println("You healed up one life!");
+            case 5:
+                item.setSkips(item.getSkips() - 1);
+                player.setMoney(player.getMoney() + 50);
+                System.out.println("You skipped this round and earned 50$ ");
         }
     }
 }
