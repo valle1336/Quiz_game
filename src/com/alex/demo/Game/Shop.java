@@ -17,6 +17,9 @@ public class Shop {
     void shopShop() {
 
         System.out.println("Welcome to the shop what do you want? 🏪\n" +
+                "You have " +
+                player.getMoney() +
+                " $ \n" +
                 "1. Potion🧙🧃 200$ \n" +
                 "2. Skips➡ 350$ \n" +
                 "3. Exit shop⬅"
@@ -29,7 +32,10 @@ public class Shop {
 
         if (sc == 1) {
             if (player.getMoney() >= 200) {
-                item.setPotion(1);
+                item.setPotion(item.getPotion() + 1);
+                player.setMoney(player.getMoney() - 200);
+                System.out.println("You now have " + item.getPotion() + " potion(s)! And " + player.getMoney() + " $ left! \n");
+                shopShop();
             }
             else {
                 System.out.println("You can't afford this item! ❌ \n");
@@ -38,7 +44,10 @@ public class Shop {
         }
         if (sc == 2) {
             if (player.getMoney() >= 350) {
-                item.setSkips(1);
+                item.setSkips(item.getSkips() + 1);
+                player.setMoney(player.getMoney() - 350);
+                System.out.println("You now have " + item.getSkips() + " skip(s)! And " + player.getMoney() + " $ left! \n");
+                shopShop();
             }
             else {
                 System.out.println("You can't afford this item! ❌ \n");

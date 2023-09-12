@@ -42,7 +42,6 @@ public class Menu {
     }
 
     private void goToShop() {
-        System.out.println("There is no shop at this time!");
         shop.shopShop();
     }
 
@@ -154,15 +153,18 @@ public class Menu {
                 player.setLives(player.getLives() -1);
                 player.checkLives();
                 System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + " ❌" + "\n");
+                startGame();
                 break;
             case 2:
                 player.setMoney(player.getMoney() + 80);
                 System.out.println("You were right :) + 80$!" + " Current money: " + player.getMoney() + "$ ✅ \n");
+                startGame();
                 break;
             case 3:
                 player.setLives(player.getLives() -1);
                 player.checkLives();
                 System.out.println("You were wrong - 1 life :( " + " Current lives: " + player.getLives() + " ❌" + "\n");
+                startGame();
                 break;
         }
     }

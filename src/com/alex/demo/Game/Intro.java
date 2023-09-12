@@ -22,14 +22,14 @@ public class Intro {
     }
 
     public void Continue() {
-        System.out.println("Hello " + player.getName() + " do you wish to continue? :)");
+        System.out.println("Hello " + player.getName() + " do you wish to continue? :) Y/N");
 
         String yesOrNo = scan.nextLine();
 
-        if (yesOrNo.equals("Yes")) {
+        if (yesOrNo.equals("Y")) {
             menu.startGame();
         }
-        else if (yesOrNo.equals("No")){
+        else if (yesOrNo.equals("N")){
             System.out.println("Okay exiting app! :(");
             System.exit(0);
         }

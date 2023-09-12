@@ -8,7 +8,7 @@ public class Player {
 
     private int lives = 3;
 
-    private int money;
+    private int money = 500;
 
     public String getName() {
         return name;
