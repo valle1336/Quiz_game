@@ -34,7 +34,7 @@ public class Shop {
             if (player.getMoney() >= 200) {
                 item.setPotion(item.getPotion() + 1);
                 player.setMoney(player.getMoney() - 200);
-                System.out.println("You now have " + item.getPotion() + " potion(s)! And " + player.getMoney() + " $ left! \n");
+                System.out.println("You now have " + item.getPotion() + " potion(s)! And " + player.getMoney() + " $ left!\n");
                 shopShop();
             }
             else {
